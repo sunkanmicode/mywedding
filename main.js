@@ -20,8 +20,8 @@ const months = [
     'Thursday',
     'Friday',
     'Saturday',
+    ];
     
-    ]
 
 
 
@@ -74,6 +74,18 @@ const getCountDownStart = () =>{
   })
   
   
-}
-const counter = setInterval(getCountDownStart, 1000)
+};
+const counter = setInterval(getCountDownStart, 1000);
 getCountDownStart();
+
+
+const sideNav = document.querySelector('.sideNav');
+const manuBtn = document.querySelector('.manuBtn');
+
+manuBtn.addEventListener('click', () => {
+  sideNav.classList.toggle('showNav')
+});
+
+sideNav.addEventListener('click', () => {
+  sideNav.classList.remove('showNav')
+});
