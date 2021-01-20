@@ -110,75 +110,80 @@ const pictures = [
   {
     id: 4,
     category: "All",
-    image: "./img/pic(5).jpg"
+    image: "./img/pic(4).jpg"
   },
   {
     id: 5,
-    category: "intro",
-    image: "./img/pic(6).jpg"
+    category: "All",
+    image: "./img/pic(5).jpg"
   },
   {
     id: 6,
     category: "intro",
-    image: "./img/pic(7).jpg"
+    image: "./img/pic(6).jpg"
   },
   {
     id: 7,
     category: "intro",
-    image: "./img/pic(8).jpg"
+    image: "./img/pic(7).jpg"
   },
   {
     id: 8,
     category: "intro",
-    image: "./img/pic(9).jpg"
+    image: "./img/pic(8).jpg"
   },
   {
     id: 9,
     category: "intro",
-    image: "./img/pic(8).jpg"
+    image: "./img/pic(9).jpg"
   },
   {
     id: 10,
     category: "intro",
-    image: "./img/pic(9).jpg"
+    image: "./img/pic(8).jpg"
   },
   {
     id: 11,
     category: "intro",
-    image: "./img/pic(10).jpg"
+    image: "./img/pic(9).jpg"
   },
   {
     id: 12,
     category: "intro",
-    image: "./img/pic(11).jpg"
+    image: "./img/pic(10).jpg"
   },
   {
     id: 13,
     category: "intro",
-    image: "./img/pic(12).jpg"
+    image: "./img/pic(11).jpg"
   },
   {
     id: 14,
-    category: "All",
-    image: ",/img/pic(13).jpg"
+    category: "intro",
+    image: "./img/pic(12).jpg"
   },
   {
     id: 15,
     category: "All",
-    image: "./img/pic(14).jpg"
+    image: ",/img/pic(13).jpg"
   },
   {
     id: 16,
     category: "All",
-    image: "./img/pic(15).jpg"
+    image: "./img/pic(14).jpg"
   },
   {
     id: 17,
     category: "All",
-    image: "./img/pic(16).jpg"
+    image: "./img/pic(15).jpg"
   },
   {
     id: 18,
+    category: "All",
+    image: "./img/pic(16).jpg"
+  },
+  {
+    id: 19,
     category: "intro",
     image: "./img/pic(17).jpg"
   },
