@@ -142,6 +142,7 @@ nav ul li a{
   position: relative;
   z-index: 1;
   display: inline-block;
+  color: red;
 }
 .title-text p{
   font-size: 15px;
@@ -155,18 +156,19 @@ nav ul li a{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 .invite-img{
-  flex-basis: 50%;
+  flex-basis: 45%;
   margin:  10px auto;
   position: relative;
 }
 .invite-img img{
-  width: 300px;
+  width: 100%;
   border-radius:10px;
-  margin-left: 10px;
+  
 }
 .overlay{
   width: 100%;
@@ -211,58 +213,83 @@ hr{
   width: 100%;
   padding: 70px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.features{
-  flex-basis: 50%;
+.story-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
-.features h1{
-  text-align: left;
+.story{
+  flex-basis: 50%;
+  font-family: 'Shadows Into Light', cursive;
+}
+.story h1{
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 100%;
-  color: var(--pri-clr);
+  color: var(--pri-clr2);
+}
+.story p{
+  padding: 0 20px;
+  text-align: justify;
+
+}
+.story-img{
+  flex-basis: 50%;
+  margin: auto;
+}
+.story-img img{
+  width: 70%;
+  border-radius: 40px;
+}
+#arrangement {
+  width: 100%;
+  padding: 70px 0;
+  font-family: 'Kaushan Script', cursive;
+}
+.arrangement-row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.arrangement-col{
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.features-desc{
-  display: flex;
-  align-items:center;
-  margin-bottom: 40px;
-}
-.features-icons p{
-  width: 50px;
-  height: 50px;
-  font-size:30px;
-  line-height: 50px;
-  border-radius:8px;
-  color: var(--pri-clr);
-  border: 1px solid var(--pri-clr );
-}
-.feature-text{
-  padding: 0 20px;
-  text-align: initial;
-}
- @media screen and (max-width:770px) {
-  .title-text h1{
-    font-size: 35px;
-  }
-  .features{
-    flex-basis: 100%;
-  }
-  .features-img{
-    flex-basis: 100%;
-  }
-  .features-img img{
-    width: 100%;
-  }
+.photo-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .col-4{ 
+  padding: 0px;
+  max-width:  300px;
+  margin: 0 0 50px 50px;
 } 
+.col-4 img{
+  width: 100%;
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Shadows Into Light', cursive; */

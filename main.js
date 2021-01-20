@@ -81,6 +81,7 @@ getCountDownStart();
 
 const sideNav = document.querySelector('.sideNav');
 const manuBtn = document.querySelector('.manuBtn');
+const photoGallery = document.querySelector('.photo-gallery');
 
 manuBtn.addEventListener('click', () => {
   sideNav.classList.toggle('showNav')
@@ -89,3 +90,106 @@ manuBtn.addEventListener('click', () => {
 sideNav.addEventListener('click', () => {
   sideNav.classList.remove('showNav')
 });
+
+const pictures = [
+  {
+    id: 1,
+    category: "All",
+    image: "./img/pic(1).jpg"
+  },
+  {
+    id: 2,
+    category: "All",
+    image: "./img/pic(2).jpg"
+  },
+  {
+    id: 3,
+    category: "All",
+    image: "./img/pic(3).jpg"
+  },
+  {
+    id: 4,
+    category: "All",
+    image: "./img/pic(5).jpg"
+  },
+  {
+    id: 5,
+    category: "intro",
+    image: "./img/pic(6).jpg"
+  },
+  {
+    id: 6,
+    category: "intro",
+    image: "./img/pic(7).jpg"
+  },
+  {
+    id: 7,
+    category: "intro",
+    image: "./img/pic(8).jpg"
+  },
+  {
+    id: 8,
+    category: "intro",
+    image: "./img/pic(9).jpg"
+  },
+  {
+    id: 9,
+    category: "intro",
+    image: "./img/pic(8).jpg"
+  },
+  {
+    id: 10,
+    category: "intro",
+    image: "./img/pic(9).jpg"
+  },
+  {
+    id: 11,
+    category: "intro",
+    image: "./img/pic(10).jpg"
+  },
+  {
+    id: 12,
+    category: "intro",
+    image: "./img/pic(11).jpg"
+  },
+  {
+    id: 13,
+    category: "intro",
+    image: "./img/pic(12).jpg"
+  },
+  {
+    id: 14,
+    category: "All",
+    image: ",/img/pic(13).jpg"
+  },
+  {
+    id: 15,
+    category: "All",
+    image: "./img/pic(14).jpg"
+  },
+  {
+    id: 16,
+    category: "All",
+    image: "./img/pic(15).jpg"
+  },
+  {
+    id: 17,
+    category: "All",
+    image: "./img/pic(16).jpg"
+  },
+  {
+    id: 18,
+    category: "intro",
+    image: "./img/pic(17).jpg"
+  },
+]
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  const displayPic = pictures.map((pic) =>{
+    return `<div class="col-4">
+            <img src="${pic.image}" alt="">
+            </div> `
+  })
+  showPicture = displayPic.join('')
+    photoGallery.innerHTML = showPicture;
+})
