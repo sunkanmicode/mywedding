@@ -130,6 +130,7 @@ nav ul li a{
 #invitation {
   width: 100%;
   padding: 70px 0;
+  background-color: #eeffee;
 }
 .title-text{
   text-align: center;
@@ -247,6 +248,7 @@ hr{
 #arrangement {
   width: 100%;
   padding: 70px 0;
+  background-color: #eeffee;
   font-family: 'Kaushan Script', cursive;
 }
 .arrangement-row{
@@ -280,6 +282,13 @@ hr{
 .col-4 img{
   width: 100%;
   border-radius: 7px;
+}
+footer{
+  background-color: #333;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 
