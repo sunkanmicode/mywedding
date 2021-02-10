@@ -256,16 +256,17 @@ hr{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 .arrangement-col{
-  flex-basis: 28%;
+  flex-basis: 40%;
   padding: 10px;
   margin-bottom: 30px;
   border-radius: 5px;
   text-align: center;
 }
+
 
 .photo-gallery{
   display: grid;
