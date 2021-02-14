@@ -198,22 +198,7 @@ const pictures = [
     category: "intro",
     image: "./img/pic(23).jpg"
   },
-]
-
-window.addEventListener('DOMContentLoaded', ()=>{
-  displayPictures();
-  displayBesties();
-});
-
-const displayPictures = () =>{
-  const displayPic = pictures.map((pic) =>{
-    return `<div class="col-4">
-            <img src="${pic.image}" alt="">
-            </div> `
-  })
-  showPicture = displayPic.join('')
-    photoGallery.innerHTML = showPicture;
-}
+];
 const besties = [
   {
     id: 1,
@@ -277,7 +262,18 @@ const besties = [
   },
 ]
 
-const displayBesties = () =>{
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  displayPictures();
+  // displayBesties();
+});
+
+const displayPictures = () =>{
+  const displayPic = pictures.map((pic) =>{
+    return `<div class="col-4">
+            <img src="${pic.image}" alt="">
+            </div> `
+  });
   const displayPhoto = besties.map((photo) =>{
     return `<div class="col-3">
             <img src="${photo.images}" alt="">
@@ -285,4 +281,6 @@ const displayBesties = () =>{
   })
   showPhoto = displayPhoto.join('')
     bestiesGallery.innerHTML = showPhoto;
+  showPicture = displayPic.join('')
+    photoGallery.innerHTML = showPicture;
 }
