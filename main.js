@@ -82,6 +82,7 @@ getCountDownStart();
 const sideNav = document.querySelector('.sideNav');
 const manuBtn = document.querySelector('.manuBtn');
 const photoGallery = document.querySelector('.photo-gallery');
+const bestiesGallery = document.querySelector('.besties-gallery')
 
 manuBtn.addEventListener('click', () => {
   sideNav.classList.toggle('showNav')
@@ -95,12 +96,17 @@ const pictures = [
   {
     id: 1,
     category: "All",
-    image: "./img/pic(1).jpg"
+    image: "./img/pic(19).jpg"
   },
   {
     id: 2,
     category: "All",
     image: "./img/pic(2).jpg"
+  },
+  {
+    id: 2,
+    category: "All",
+    image: "./img/pic(21).jpg"
   },
   {
     id: 3,
@@ -135,20 +141,10 @@ const pictures = [
   {
     id: 9,
     category: "intro",
-    image: "./img/pic(9).jpg"
+    image: "./img/pic(12).jpg"
   },
   {
     id: 10,
-    category: "intro",
-    image: "./img/pic(8).jpg"
-  },
-  {
-    id: 11,
-    category: "intro",
-    image: "./img/pic(9).jpg"
-  },
-  {
-    id: 12,
     category: "intro",
     image: "./img/pic(10).jpg"
   },
@@ -160,12 +156,12 @@ const pictures = [
   {
     id: 14,
     category: "intro",
-    image: "./img/pic(12).jpg"
+    image: "./img/pic(18).jpg"
   },
   {
     id: 15,
     category: "All",
-    image: ",/img/pic(13).jpg"
+    image: "./img/pic(13).jpg"
   },
   {
     id: 16,
@@ -183,13 +179,33 @@ const pictures = [
     image: "./img/pic(16).jpg"
   },
   {
+    id: 18,
+    category: "All",
+    image: "./img/pic(17).jpg"
+  },
+  {
     id: 19,
     category: "intro",
-    image: "./img/pic(17).jpg"
+    image: "./img/pic(9).jpg"
+  },
+  {
+    id: 20,
+    category: "intro",
+    image: "./img/pic(20).jpg"
+  },
+  {
+    id: 20,
+    category: "intro",
+    image: "./img/pic(23).jpg"
   },
 ]
 
 window.addEventListener('DOMContentLoaded', ()=>{
+  displayPictures();
+  displayBesties();
+});
+
+const displayPictures = () =>{
   const displayPic = pictures.map((pic) =>{
     return `<div class="col-4">
             <img src="${pic.image}" alt="">
@@ -197,4 +213,76 @@ window.addEventListener('DOMContentLoaded', ()=>{
   })
   showPicture = displayPic.join('')
     photoGallery.innerHTML = showPicture;
-})
+}
+const besties = [
+  {
+    id: 1,
+    img: "./img/photo (2).jpg",
+    name: "Noel"
+  },
+  {
+    id: 2,
+    img: "./img/photo (4).jpg",
+    name: "Sunday"
+  },
+  {
+    id: 3,
+    img: "./img/photo (10).jpg",
+    name: "Onome"
+  },
+  {
+    id: 4,
+    img: "./img/photo (11).jpg",
+    name: "Daniel"
+  },
+  {
+    id: 5,
+    img: "./img/photo (12).jpg",
+    name: "Femi"
+  },
+  {
+    id: 6,
+    img: "./img/photo (12).jpg",
+    name: "femi"
+  },
+  {
+    id: 7,
+    img: "./img/photo (3).jpg",
+    name: "Faith"
+  },
+  {
+    id: 8,
+    img: "./img/photo (5).jpg",
+    name: "Stacie"
+  },
+  {
+    id: 9,
+    img: "./img/photo (6).jpg",
+    name: "Olamide"
+  },
+  {
+    id: 10,
+    img: "./img/photo (7).jpg",
+    name: "Bukola"
+  },
+  {
+    id: 11,
+    img: "./img/photo (8).jpg",
+    name: "Enitan"
+  },
+  {
+    id: 12,
+    img: "./img/photo (13).jpg",
+    name: "Josephine"
+  },
+]
+
+const displayBesties = () =>{
+  const displayPhoto = besties.map((photo) =>{
+    return `<div class="col-3">
+            <img src="${photo.img}" alt="">
+            </div> `
+  })
+  showPhoto = displayPhoto.join('')
+    bestiesGallery.innerHTML = showPhoto;
+}
