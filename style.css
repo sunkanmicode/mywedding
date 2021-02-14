@@ -305,7 +305,7 @@ hr{
   -moz-text-fil-color: transparent;
 }
 .col-3 img{
-  width: 100%;
+  width: 80%;
   border-radius: 7px;
   transition: all .5s;
 }
@@ -316,7 +316,7 @@ hr{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
