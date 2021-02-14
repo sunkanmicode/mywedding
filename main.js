@@ -217,62 +217,62 @@ const displayPictures = () =>{
 const besties = [
   {
     id: 1,
-    img: "./img/photo (2).jpg",
+    images: "./img/photo (2).jpg",
     name: "Noel"
   },
   {
     id: 2,
-    img: "./img/photo (4).jpg",
+    images: "./img/photo (4).jpg",
     name: "Sunday"
   },
   {
     id: 3,
-    img: "./img/photo (10).jpg",
+    images: "./img/photo (10).jpg",
     name: "Onome"
   },
   {
     id: 4,
-    img: "./img/photo (11).jpg",
+    images: "./img/photo (11).jpg",
     name: "Daniel"
   },
   {
     id: 5,
-    img: "./img/photo (12).jpg",
+    images: "./img/photo (12).jpg",
     name: "Femi"
   },
   {
     id: 6,
-    img: "./img/photo (12).jpg",
+    images: "./img/photo (12).jpg",
     name: "femi"
   },
   {
     id: 7,
-    img: "./img/photo (3).jpg",
+    images: "./img/photo (3).jpg",
     name: "Faith"
   },
   {
     id: 8,
-    img: "./img/photo (5).jpg",
+    images: "./img/photo (5).jpg",
     name: "Stacie"
   },
   {
     id: 9,
-    img: "./img/photo (6).jpg",
+    images: "./img/photo (6).jpg",
     name: "Olamide"
   },
   {
     id: 10,
-    img: "./img/photo (7).jpg",
+    images: "./img/photo (7).jpg",
     name: "Bukola"
   },
   {
     id: 11,
-    img: "./img/photo (8).jpg",
+    images: "./img/photo (8).jpg",
     name: "Enitan"
   },
   {
     id: 12,
-    img: "./img/photo (13).jpg",
+    images: "./img/photo (13).jpg",
     name: "Josephine"
   },
 ]
@@ -280,7 +280,7 @@ const besties = [
 const displayBesties = () =>{
   const displayPhoto = besties.map((photo) =>{
     return `<div class="col-3">
-            <img src="${photo.img}" alt="">
+            <img src="${photo.images}" alt="">
             </div> `
   })
   showPhoto = displayPhoto.join('')
