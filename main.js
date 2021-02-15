@@ -277,6 +277,7 @@ const displayPictures = () =>{
   const displayPhoto = besties.map((photo) =>{
     return `<div class="col-3">
             <img src="${photo.images}" alt="">
+            <p>${photo.name}</p>
             </div> `
   })
   showPhoto = displayPhoto.join('')
