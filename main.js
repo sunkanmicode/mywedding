@@ -31,7 +31,7 @@ const outcome = document.querySelector('h3');
 const countDown = document.querySelectorAll('.time p');
 
 
-const futureDate = new Date(2021, 1, 26, 10, 30, 0);
+const futureDate = new Date(2021, 1, 27, 10, 00, 0);
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
