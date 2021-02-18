@@ -93,36 +93,7 @@ sideNav.addEventListener('click', () => {
 });
 
 const pictures = [
-  {
-    id: 1,
-    category: "All",
-    image: "./img/pic(19).jpg"
-  },
-  {
-    id: 2,
-    category: "All",
-    image: "./img/pic(2).jpg"
-  },
-  {
-    id: 2,
-    category: "All",
-    image: "./img/pic(21).jpg"
-  },
-  {
-    id: 3,
-    category: "All",
-    image: "./img/pic(3).jpg"
-  },
-  {
-    id: 4,
-    category: "All",
-    image: "./img/pic(4).jpg"
-  },
-  {
-    id: 5,
-    category: "All",
-    image: "./img/pic(5).jpg"
-  },
+ 
   {
     id: 6,
     category: "intro",
@@ -137,6 +108,21 @@ const pictures = [
     id: 8,
     category: "intro",
     image: "./img/pic(8).jpg"
+  },
+  {
+    id: 14,
+    category: "intro",
+    image: "./img/pic(18).jpg"
+  },
+  {
+    id: 15,
+    category: "All",
+    image: "./img/pic(13).jpg"
+  },
+  {
+    id: 16,
+    category: "All",
+    image: "./img/pic(14).jpg"
   },
   {
     id: 9,
@@ -154,19 +140,19 @@ const pictures = [
     image: "./img/pic(11).jpg"
   },
   {
-    id: 14,
-    category: "intro",
-    image: "./img/pic(18).jpg"
+    id: 3,
+    category: "All",
+    image: "./img/pic(3).jpg"
   },
   {
-    id: 15,
+    id: 4,
     category: "All",
-    image: "./img/pic(13).jpg"
+    image: "./img/pic(4).jpg"
   },
   {
-    id: 16,
+    id: 5,
     category: "All",
-    image: "./img/pic(14).jpg"
+    image: "./img/pic(5).jpg"
   },
   {
     id: 17,
@@ -285,3 +271,28 @@ const displayPictures = () =>{
   showPicture = displayPic.join('')
     photoGallery.innerHTML = showPicture;
 }
+
+
+
+
+
+
+
+
+
+
+// {
+//   id: 1,
+//   category: "All",
+//   image: "./img/pic(19).jpg"
+// },
+// {
+//   id: 2,
+//   category: "All",
+//   image: "./img/pic(2).jpg"
+// },
+// {
+//   id: 2,
+//   category: "All",
+//   image: "./img/pic(21).jpg"
+// },

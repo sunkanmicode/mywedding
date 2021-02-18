@@ -11,7 +11,7 @@ body {
     font-size: 15pt;
 }
 #home{
-  background:radial-gradient(rgba(0, 0, 0, 0.5), var(--pri-clr1)),url(Img/Img2.jpg);
+  background:radial-gradient(rgba(0, 0, 0, 0.5), var(--pri-clr1)),url(Img/7-1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
