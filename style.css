@@ -353,16 +353,14 @@ hr{
 @media screen and (max-width: 600px){
   .bestie-con{
     display: block;
-    margin-left: 50px;
-    /* justify-content: center;
-    align-self: center; */
+ 
   }
   .besties-gallery{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
-    /* margin-left: 50px; */
+   
   }
 }
 
@@ -376,12 +374,12 @@ hr{
 }
 @media screen and (max-width: 600px){
   #meet-us{
-    background: url(Img/2.jpg);
+    background: url(Img/7-1.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-position: 50%;
     height: 100vh;
-    text-align: center;
-    font-size: 5rem;
+   
 }
 }
 
