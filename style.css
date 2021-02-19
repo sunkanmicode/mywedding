@@ -362,17 +362,27 @@ hr{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
 }
 
 #meet-us{
     background: url(Img/7-1.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 5rem;
+}
+@media screen and (max-width: 600px){
+  #meet-us{
+    background: url(Img/2.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     text-align: center;
     font-size: 5rem;
+}
 }
 
 
@@ -410,7 +420,7 @@ hr{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
 }
 
