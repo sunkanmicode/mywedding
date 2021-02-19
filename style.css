@@ -373,14 +373,14 @@ hr{
     font-size: 5rem;
 }
 @media screen and (max-width: 600px){
-  #meet-us{
-    background: url(Img/7-1.jpg);
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-position: 50%;
-    height: 100vh;
-   
-}
+    #meet-us{
+      background: url(Img/2.jpg);
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+      background-position: center;
+      height: 100vh;
+    
+  }
 }
 
 
