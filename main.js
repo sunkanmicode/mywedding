@@ -154,36 +154,6 @@ const pictures = [
     category: "All",
     image: "./img/pic(5).jpg"
   },
-  {
-    id: 17,
-    category: "All",
-    image: "./img/pic(15).jpg"
-  },
-  {
-    id: 18,
-    category: "All",
-    image: "./img/pic(16).jpg"
-  },
-  {
-    id: 18,
-    category: "All",
-    image: "./img/pic(17).jpg"
-  },
-  {
-    id: 19,
-    category: "intro",
-    image: "./img/pic(9).jpg"
-  },
-  {
-    id: 20,
-    category: "intro",
-    image: "./img/pic(20).jpg"
-  },
-  {
-    id: 20,
-    category: "intro",
-    image: "./img/pic(23).jpg"
-  },
 ];
 const besties = [
   {
@@ -213,8 +183,8 @@ const besties = [
   },
   {
     id: 6,
-    images: "./img/photo (12).jpg",
-    name: "femi"
+    images: "./img/photo (14).jpg",
+    name: "Tosin"
   },
   {
     id: 7,

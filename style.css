@@ -11,7 +11,7 @@ body {
     font-size: 15pt;
 }
 #home{
-  background:radial-gradient(rgba(0, 0, 0, 0.5), var(--pri-clr1)),url(Img/7-1.jpg);
+  background:radial-gradient(rgba(0, 0, 0, 0.5), var(--pri-clr1)),url(Img/Img2.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -366,6 +366,16 @@ hr{
   }
 }
 
+#meet-us{
+    background: url(Img/7-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 5rem;
+}
+
+
 
 /* Photo */
 #photo{
@@ -400,10 +410,9 @@ hr{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-left: 50px;
+    margin-left: 10%;
   }
 }
-
 
 footer{
   background-color: #333;
