@@ -29,6 +29,7 @@ const months = [
 const wedDate = document.querySelector('.wed-date');
 const outcome = document.querySelector('h3');
 const countDown = document.querySelectorAll('.time p');
+const deadline = document.querySelector('.deadline')
 
 
 const futureDate = new Date(2021, 1, 27, 10, 00, 0);
@@ -43,7 +44,7 @@ let weekday = futureDate.getDay();
 weekday = weekdays[weekday];
 
 
-wedDate.innerHTML = `Date: ${weekday}  ${date}th ${month} ${year}, ${hours}:${mins}am`
+wedDate.innerHTML = `Date: ${weekday}  ${date}th ${month} ${year}, ${hours}:0${mins}am`
 
 const futureTime = futureDate.getTime();
 
@@ -69,9 +70,21 @@ const getCountDownStart = () =>{
   
   
   const value = [days, hours, mins, secs];
+
+  const format =(item)=>{
+    if(item < 10){
+      return item = `0${item}`
+    }
+    return item
+  }
+
   countDown.forEach((item, index) =>{
-    return item.innerHTML = value[index]
-  })
+    return item.innerHTML = format(value[index])
+ });
+ if(countDate < 0){
+   clearInterval(counter)
+   deadline.innerHTML = `<h1>Congraduations  <br> Mr and Mrs Olasunkanmi Oguntimehin</h1>`
+ }
   
   
 };
@@ -221,7 +234,7 @@ const besties = [
 
 window.addEventListener('DOMContentLoaded', ()=>{
   displayPictures();
-  // displayBesties();
+  
 });
 
 const displayPictures = () =>{
@@ -251,18 +264,3 @@ const displayPictures = () =>{
 
 
 
-// {
-//   id: 1,
-//   category: "All",
-//   image: "./img/pic(19).jpg"
-// },
-// {
-//   id: 2,
-//   category: "All",
-//   image: "./img/pic(2).jpg"
-// },
-// {
-//   id: 2,
-//   category: "All",
-//   image: "./img/pic(21).jpg"
-// },
