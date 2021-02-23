@@ -130,6 +130,7 @@ nav ul li a{
   width: 100%;
   padding: 70px 0;
   background-color: #eeffee;
+  position: relative;
 }
 .title-text{
   text-align: center;
@@ -149,67 +150,24 @@ nav ul li a{
   font-style: italic;
   margin: 20px;
 }
-
-.invite-box{
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.invite-img{
-  flex-basis: 45%;
-  margin:  10px auto;
-  position: relative;
-}
-.invite-img img{
-  width: 100%;
-  border-radius:10px;
-}
-.overlay{
-  width: 100%;
-  height: 100%;
+.music{
   position: absolute;
-  top: 0;
-  border-radius: 7px;
-  cursor: pointer;
-  background: var(--pri-clr1);
-  opacity: 0;
-  transition: .1s;
+  top: 70%;
+  left: 40%;
+}
+.music audio{
+  outline: none;
 }
 
-.invite-img:hover .overlay{
-  opacity: 0.5;
-}
-.invite-msg{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: .5s;
-}
-hr{
-  background: #fff;
-  height: 2px;
-  border: 0;
-  margin: 15px auto;
-  width: 60%;
-}
-.invite-msg p{
-  font-size: 14px;
-  color: #fff;
-}
-.invite-img:hover .invite-msg{
-  bottom: 40%;
-  opacity: 1;
-}
 @media screen and (max-width: 600px){
   .invite-img{
     flex-basis: 100%;
+  }
+  .music{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+
   }
 }
 
@@ -281,9 +239,22 @@ hr{
   border-radius: 5px;
   text-align: center;
 }
+.arrangement-row h4{
+  margin-left: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--pri-clr1);
+  
+}
+
+
 @media screen and (max-width: 600px){
   .arrangement-col{
     flex-basis: 100%;
+  }
+  .arrangement-row h4{
+    margin: auto;
   }
 }
 
@@ -371,6 +342,10 @@ hr{
     height: 100vh;
     text-align: center;
     font-size: 5rem;
+   
+}
+audio{
+  color: #fff;
 }
 @media screen and (max-width: 600px){
     #meet-us{
@@ -439,5 +414,4 @@ footer{
 
 
 
-/* font-family: 'Kaushan Script', cursive; */
-/* font-family: 'Shadows Into Light', cursive; */
+
