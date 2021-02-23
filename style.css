@@ -165,7 +165,7 @@ nav ul li a{
   }
   .music{
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 20%;
 
   }
@@ -245,7 +245,6 @@ nav ul li a{
   border-radius: 10px;
   padding: 10px;
   background-color: var(--pri-clr1);
-  
 }
 
 
